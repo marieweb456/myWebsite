@@ -1,0 +1,102 @@
+.contentPageAbout .contentPage {
+  margin-top: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerImgTxt {
+  height: 90vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+.contentParag {
+  display: flex;
+  flex-direction: column;
+}
+.contentText h3 {
+  margin-bottom: 0;
+  color: #978d91;
+  filter: brightness(70%);
+}
+.contentText p a {
+  font-size: 1.1em;
+  transition: color 0.2s ease-in-out;
+}
+.contentText p a:hover {
+  color: #978d91;
+  filter: brightness(50%);
+}
+
+.containerImgTxt .contentImg img {
+  width: 300px;
+  height: 40vh;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+  /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+}
+
+.contentSocialIcn {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 0;
+}
+
+.contentSocialIcn a {
+  margin-right: 2em;
+}
+
+.contentSocialIcn a:hover {
+  color: #978d91;
+  filter: brightness(50%);
+}
+
+@media only screen and (max-width: 1150px) {
+  .containerImgTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .containerImgTxt .contentImg img {
+    width: 300px;
+    height: 30vh;
+    margin-top: 4em;
+    margin-bottom: 2em;
+  }
+  .contentText {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80vw;
+  }
+  .contentSocialIcn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .containerImgTxt .contentImg img {
+    width: 200px;
+    height: 20vh;
+  }
+}

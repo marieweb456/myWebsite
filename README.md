@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- pour éviter d'indexer le site, en prod :
+_ dans index.html, ajouter "<meta name="robots" content="noindex, nofollow" />" dans le "<head>".
+_ dans le robots.txt, remplacer :
+"User-agent: _
+Disallow: "
+par
+"User-agent: _
+Disallow: /" -->
