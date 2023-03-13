@@ -5,7 +5,7 @@ import Illustration from './pages/Illustration';
 import Login from './pages/Login';
 import About from './pages/About';
 import Locked from './pages/Locked';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { AuthContextProvider } from './store/auth/AuthContext';
 import Navbar from './components/Navbar';
 
@@ -22,6 +22,9 @@ function App() {
           <Route path='login' element={<Login />} />
           <Route path='locked' element={<Locked />} />
           <Route path='about' element={<About />} />
+
+          {/* Rediriger vers Home si le chemin n'est pas reconnu */}
+          <Route path='*' element={<Navigate to='/' />} />
 
           {/* <Route
           path='dashboard'
