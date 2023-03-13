@@ -5,7 +5,7 @@ import Illustration from './pages/Illustration';
 import Login from './pages/Login';
 import About from './pages/About';
 import Locked from './pages/Locked';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Redirect } from 'react-router-dom';
 import { AuthContextProvider } from './store/auth/AuthContext';
 import Navbar from './components/Navbar';
 
@@ -21,6 +21,7 @@ function App() {
           <Route path='login' element={<Login />} />
           <Route path='locked' element={<Locked />} />
           <Route path='about' element={<About />} />
+          <Route exact path='/' element={<Redirect to='/portfolio' />} />
           {/* <Route
           path='dashboard'
           element={
