@@ -1,30 +1,30 @@
 [[redirects]]
   from = "/pleinAir"
-  to = "/pleinAir.html"
+  to = "/pleinAir"
   status = 200
   force = true
 
 [[redirects]]
   from = "/illustration"
-  to = "/illustration.html"
+  to = "/illustration"
   status = 200
   force = true
 
 [[redirects]]
   from = "/login"
-  to = "/login.html"
+  to = "/login"
   status = 200
   force = true
 
 [[redirects]]
   from = "/locked"
-  to = "/locked.html"
+  to = "/locked"
   status = 200
   force = true
 
 [[redirects]]
   from = "/about"
-  to = "/about.html"
+  to = "/about"
   status = 200
   force = true
 
