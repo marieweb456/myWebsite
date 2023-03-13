@@ -21,7 +21,7 @@ function App() {
           <Route path='login' element={<Login />} />
           <Route path='locked' element={<Locked />} />
           <Route path='about' element={<About />} />
-          <Route exact path='/' element={<Redirect to='/portfolio' />} />
+          <Route exact path='/' element={<Redirect to={<Home />} />} />
           {/* <Route
           path='dashboard'
           element={
