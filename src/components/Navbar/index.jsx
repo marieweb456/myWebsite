@@ -10,7 +10,7 @@ const Navbar = () => {
   const { currentAdmin } = useContext(AuthContext);
 
   // gestion de l'effet "activeLink"
-  const [activeLink, setActiveLink] = useState('');
+  const [activeLink, setActiveLink] = useState('/');
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = (link) => {
