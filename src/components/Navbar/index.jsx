@@ -10,7 +10,7 @@ const Navbar = () => {
   const { currentAdmin } = useContext(AuthContext);
 
   // gestion de l'effet "activeLink"
-  const [activeLink, setActiveLink] = useState('portfolio');
+  const [activeLink, setActiveLink] = useState('');
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = (link) => {
@@ -50,7 +50,7 @@ const Navbar = () => {
   useEffect(() => {
     const currentPath = window.location.pathname;
     switch (currentPath) {
-      case '/portfolio':
+      case '/':
         setActiveLink('portfolio');
         break;
       case '/pleinAir':
@@ -79,11 +79,7 @@ const Navbar = () => {
         <nav className={`${styles.mainNav} ${navbarSize ? `${styles.mainNavSize}` : ''}`}>
           <ul>
             <li>
-              <Link
-                className={styles.mainNavLogo}
-                onClick={() => handleClick('portfolio')}
-                to='/portfolio'
-              >
+              <Link className={styles.mainNavLogo} onClick={() => handleClick('portfolio')} to='/'>
                 <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
               </Link>
             </li>
@@ -92,7 +88,7 @@ const Navbar = () => {
                 <Link
                   className={styles.mainNavItem}
                   onClick={() => handleClick('portfolio')}
-                  to='/portfolio'
+                  to='/'
                 >
                   <h2 className={`${activeLink === 'portfolio' ? `${styles.active}` : ''}`}>
                     PORTFOLIO
@@ -181,7 +177,7 @@ const Navbar = () => {
             <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
             <ul className={`${styles.menu} ${isActive ? styles.isOpen : ''}`}>
               <li>
-                <Link onClick={() => handleClick('portfolio')} to='/portfolio'>
+                <Link onClick={() => handleClick('portfolio')} to='/'>
                   <h2 className={`${activeLink === 'portfolio' ? `${styles.active}` : ''}`}>
                     PORTFOLIO
                   </h2>
