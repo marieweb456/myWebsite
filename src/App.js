@@ -16,9 +16,9 @@ function App() {
       <div className='contentBodyGlobal'>
         <Routes>
           {/* <Route index path='portfolio' element={<Home />} /> */}
-          <Route index path='/' element={<Home />} />
-          <Route index path='pleinAir' element={<PleinAir />} />
-          <Route index path='illustration' element={<Illustration />} />
+          <Route exact path='/' element={<Home />} />
+          <Route path='pleinAir' element={<PleinAir />} />
+          <Route path='illustration' element={<Illustration />} />
           <Route path='login' element={<Login />} />
           <Route path='locked' element={<Locked />} />
           <Route path='about' element={<About />} />
