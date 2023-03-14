@@ -2,6 +2,15 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #fff;
+  color: #000;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    /* Styles pour le mode sombre */
+    background-color: #fff;
+    /* color: #fff; */
+  }
 }
 
 * {
