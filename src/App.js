@@ -24,7 +24,7 @@ function App() {
           <Route path='/about' element={<About />} />
 
           {/* Rediriger vers Home si le chemin n'est pas reconnu */}
-          <Route path='*' element={<Navigate to='/' />} />
+          <Route path='/*' element={<Navigate to='/' />} />
 
           {/* <Route
           path='dashboard'

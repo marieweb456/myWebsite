@@ -49,6 +49,7 @@ const Navbar = () => {
   // détecter url et attribuer l'effet "activeLink" en fonction
   useEffect(() => {
     const currentPath = window.location.pathname;
+    console.log('currentPath : ', currentPath);
     switch (currentPath) {
       case '/':
         setActiveLink('portfolio');
