@@ -1,35 +1,35 @@
 [[redirects]]
-  from = "/*"
+  from = "/#/*"
   to = "/index.html"
   status = 200
   force = true
 
   [[redirects]]
-  from = "/pleinAir"
+  from = "/#/pleinAir"
   to = "/index.html"
   status = 200
 
 [[redirects]]
-  from = "/illustration"
+  from = "/#/illustration"
   to = "/index.html"
   status = 200
 
 [[redirects]]
-  from = "/login"
+  from = "/#/login"
   to = "/index.html"
   status = 200
 
 [[redirects]]
-  from = "/locked"
+  from = "/#/locked"
   to = "/index.html"
   status = 200
 
 [[redirects]]
-  from = "/about"
+  from = "/#/about"
   to = "/index.html"
   status = 200
 
 [[redirects]]
-  from = "/portfolio"
+  from = "/#/portfolio"
   to = "/index.html"
   status = 200
