@@ -3,13 +3,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #fff;
-  color: #000;
+  color: #fff;
 }
 @media (prefers-color-scheme: dark) {
   body {
     /* Styles pour le mode sombre */
     background-color: #fff;
-    /* color: #fff; */
+    color: #fff;
   }
 }
 
