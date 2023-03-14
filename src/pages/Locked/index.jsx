@@ -82,6 +82,7 @@ const Locked = () => {
                 maxLength='15'
                 pattern='[0-9a-zA-Z]{8,15}'
                 required
+                autoFocus
               />
               {/* <button type='submit'>Submit</button> */}
               {error && <p>{error}</p>}
