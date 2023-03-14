@@ -7,9 +7,8 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   body {
-    /* Styles pour le mode sombre */
     background-color: #fff;
-    color: #fff;
+    color: #333; /* Couleur de texte appropriée pour le mode sombre */
   }
 }
 
