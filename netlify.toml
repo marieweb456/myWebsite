@@ -1,41 +1,41 @@
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "https://marie-ponceau.netlify.app/"
   status = 200
   force = true
 
    [[redirects]]
   from = "/pleinAir"
-  to = "/index.html"
+  to = "https://marie-ponceau.netlify.app/"
   status = 200
    force = true
 
 [[redirects]]
   from = "/illustration"
-  to = "/index.html"
+  to = "https://marie-ponceau.netlify.app/"
   status = 200
    force = true
 
 [[redirects]]
   from = "/login"
-  to = "/index.html"
+  to = "https://marie-ponceau.netlify.app/"
   status = 200
    force = true
 
 [[redirects]]
   from = "/locked"
-  to = "/index.html"
+  to = "https://marie-ponceau.netlify.app/"
   status = 200
    force = true
 
 [[redirects]]
   from = "/about"
-  to = "/index.html"
+  to = "https://marie-ponceau.netlify.app/"
   status = 200
    force = true
 
 [[redirects]]
   from = "/portfolio"
-  to = "/index.html"
+  to = "https://marie-ponceau.netlify.app/"
   status = 200
    force = true
