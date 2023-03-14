@@ -79,7 +79,7 @@ const Navbar = () => {
         <nav className={`${styles.mainNav} ${navbarSize ? `${styles.mainNavSize}` : ''}`}>
           <ul>
             <li>
-              <Link className={styles.mainNavLogo} onClick={() => handleClick('portfolio')} to='/'>
+              <Link className={styles.mainNavLogo} onClick={() => handleClick('/portfolio')} to='/'>
                 <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
               </Link>
             </li>
@@ -87,7 +87,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className={styles.mainNavItem}
-                  onClick={() => handleClick('portfolio')}
+                  onClick={() => handleClick('/portfolio')}
                   to='/'
                 >
                   <h2 className={`${activeLink === 'portfolio' ? `${styles.active}` : ''}`}>
@@ -98,7 +98,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className={styles.mainNavItem}
-                  onClick={() => handleClick('pleinAir')}
+                  onClick={() => handleClick('/pleinAir')}
                   to='/pleinAir'
                 >
                   <h2 className={`${activeLink === 'pleinAir' ? `${styles.active}` : ''}`}>
@@ -109,7 +109,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className={styles.mainNavItem}
-                  onClick={() => handleClick('illustration')}
+                  onClick={() => handleClick('/illustration')}
                   to='/illustration'
                 >
                   <h2 className={`${activeLink === 'illustration' ? `${styles.active}` : ''}`}>
@@ -120,7 +120,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className={styles.mainNavItem}
-                  onClick={() => handleClick('locked')}
+                  onClick={() => handleClick('/locked')}
                   to='/locked'
                 >
                   <h2 className={`${activeLink === 'locked' ? `${styles.active}` : ''}`}>locked</h2>
@@ -129,7 +129,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className={styles.mainNavItem}
-                  onClick={() => handleClick('about')}
+                  onClick={() => handleClick('/about')}
                   to='/about'
                 >
                   <h2 className={`${activeLink === 'about' ? `${styles.active}` : ''}`}>about</h2>
@@ -145,7 +145,7 @@ const Navbar = () => {
                     to='/login'
                     onClick={() => {
                       dispatch({ type: 'LOGOUT' });
-                      handleClick('logout');
+                      handleClick('/logout');
                       // localStorage.clear();
                       // localStorage.removeItem('user');
                     }}
@@ -159,7 +159,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     className={styles.mainNavItem}
-                    onClick={() => handleClick('login')}
+                    onClick={() => handleClick('/login')}
                     to='/login'
                   >
                     <h2 className={`${activeLink === 'login' ? `${styles.active}` : ''}`}>login</h2>
@@ -177,33 +177,33 @@ const Navbar = () => {
             <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
             <ul className={`${styles.menu} ${isActive ? styles.isOpen : ''}`}>
               <li>
-                <Link onClick={() => handleClick('portfolio')} to='/'>
+                <Link onClick={() => handleClick('/portfolio')} to='/'>
                   <h2 className={`${activeLink === 'portfolio' ? `${styles.active}` : ''}`}>
                     PORTFOLIO
                   </h2>
                 </Link>
               </li>
               <li>
-                <Link onClick={() => handleClick('pleinAir')} to='/pleinAir'>
+                <Link onClick={() => handleClick('/pleinAir')} to='/pleinAir'>
                   <h2 className={`${activeLink === 'pleinAir' ? `${styles.active}` : ''}`}>
                     PLEIN AIR
                   </h2>
                 </Link>
               </li>
               <li>
-                <Link onClick={() => handleClick('illustration')} to='/illustration'>
+                <Link onClick={() => handleClick('/illustration')} to='/illustration'>
                   <h2 className={`${activeLink === 'illustration' ? `${styles.active}` : ''}`}>
                     ILLUSTRATION
                   </h2>
                 </Link>
               </li>
               <li>
-                <Link onClick={() => handleClick('locked')} to='/locked'>
+                <Link onClick={() => handleClick('/locked')} to='/locked'>
                   <h2 className={`${activeLink === 'locked' ? `${styles.active}` : ''}`}>locked</h2>
                 </Link>
               </li>
               <li>
-                <Link onClick={() => handleClick('about')} to='/about'>
+                <Link onClick={() => handleClick('/about')} to='/about'>
                   <h2 className={`${activeLink === 'about' ? `${styles.active}` : ''}`}>about</h2>
                 </Link>
               </li>
@@ -213,7 +213,7 @@ const Navbar = () => {
                     to='/login'
                     onClick={() => {
                       dispatch({ type: 'LOGOUT' });
-                      handleClick('logout');
+                      handleClick('/logout');
                       // localStorage.clear();
                       // localStorage.removeItem('user');
                     }}
@@ -225,7 +225,7 @@ const Navbar = () => {
                 </li>
               ) : (
                 <li>
-                  <Link onClick={() => handleClick('login')} to='/login'>
+                  <Link onClick={() => handleClick('/login')} to='/login'>
                     <h2 className={`${activeLink === 'login' ? `${styles.active}` : ''}`}>login</h2>
                   </Link>
                 </li>
