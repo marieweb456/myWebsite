@@ -2,40 +2,4 @@
   from = "/*"
   to = "/"
   status = 200
-  force = true
 
-   [[redirects]]
-  from = "/pleinAir"
-  to = "/"
-  status = 200
-   force = true
-
-[[redirects]]
-  from = "/illustration"
-  to = "/"
-  status = 200
-   force = true
-
-[[redirects]]
-  from = "/login"
-  to = "/"
-  status = 200
-   force = true
-
-[[redirects]]
-  from = "/locked"
-  to = "/"
-  status = 200
-   force = true
-
-[[redirects]]
-  from = "/about"
-  to = "/"
-  status = 200
-   force = true
-
-[[redirects]]
-  from = "/portfolio"
-  to = "/"
-  status = 200
-   force = true
