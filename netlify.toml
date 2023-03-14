@@ -1,0 +1,30 @@
+[[redirects]]
+  from = "/pleinAir"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/illustration"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/login"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/locked"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
+

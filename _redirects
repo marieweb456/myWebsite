@@ -1,9 +1,0 @@
-# Redirects from what the browser requests to what we serve
-
-/\* / 200
-/portfolio / 200
-/pleinAir / 200
-/locked / 200
-/about / 200
-/login / 200
-/ / 200
