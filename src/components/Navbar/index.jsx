@@ -142,7 +142,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     className={styles.mainNavItem}
-                    to='./login'
+                    to='/login'
                     onClick={() => {
                       dispatch({ type: 'LOGOUT' });
                       handleClick('logout');
@@ -160,7 +160,7 @@ const Navbar = () => {
                   <Link
                     className={styles.mainNavItem}
                     onClick={() => handleClick('login')}
-                    to='./login'
+                    to='/login'
                   >
                     <h2 className={`${activeLink === 'login' ? `${styles.active}` : ''}`}>login</h2>
                   </Link>
@@ -210,7 +210,7 @@ const Navbar = () => {
               {currentAdmin ? (
                 <li>
                   <Link
-                    to='./login'
+                    to='/login'
                     onClick={() => {
                       dispatch({ type: 'LOGOUT' });
                       handleClick('logout');
@@ -225,7 +225,7 @@ const Navbar = () => {
                 </li>
               ) : (
                 <li>
-                  <Link onClick={() => handleClick('login')} to='./login'>
+                  <Link onClick={() => handleClick('login')} to='/login'>
                     <h2 className={`${activeLink === 'login' ? `${styles.active}` : ''}`}>login</h2>
                   </Link>
                 </li>
