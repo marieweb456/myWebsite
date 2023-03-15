@@ -38,7 +38,8 @@ const Locked = () => {
       //       let compare = hashedPassword === process.env.REACT_APP_WORLD_HASH;
       // console.log('hashedPassword : ', hashedPassword);
       let compare = password === process.env.REACT_APP_WORLD_HASH;
-      console.log('hashedPassword : ', password);
+      console.log('process.env.REACT_APP_WORLD_HASH : ', process.env.REACT_APP_WORLD_HASH);
+      console.log('password : ', password);
       // let compare = await bcrypt.compare(password, process.env.REACT_APP_WORLD);
       if (compare) {
         try {
