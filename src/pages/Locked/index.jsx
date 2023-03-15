@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 // import bcrypt from 'bcryptjs';
-import CryptoJS from 'crypto-js';
+// import CryptoJS from 'crypto-js';
 import styles from './index.module.css';
 import { AuthContext } from '../../store/auth/AuthContext';
 import Upfile from '../../components/UpFile';
@@ -14,9 +14,9 @@ const Locked = () => {
   const { currentUser } = useContext(AuthContext);
   const { dispatch } = useContext(AuthContext);
 
-  let hashedPassword = CryptoJS.SHA256('goodvibes').toString();
+  // let hashedPassword = CryptoJS.SHA256('goodvibes').toString();
 
-  console.log('hashedPassword : ', hashedPassword);
+  // console.log('hashedPassword : ', hashedPassword);
 
   // const handleTest = async (e) => {
   //   let text = 'goodvibes';
@@ -34,9 +34,11 @@ const Locked = () => {
       // let hash = await bcrypt.hash(text);
       // console.log('hash : ', hash);
 
-      let hashedPassword = CryptoJS.SHA256(password).toString();
-      let compare = hashedPassword === process.env.REACT_APP_WORLD_HASH;
-
+      // let hashedPassword = CryptoJS.SHA256(password).toString();
+      //       let compare = hashedPassword === process.env.REACT_APP_WORLD_HASH;
+      // console.log('hashedPassword : ', hashedPassword);
+      let compare = password === process.env.REACT_APP_WORLD_HASH;
+      console.log('hashedPassword : ', password);
       // let compare = await bcrypt.compare(password, process.env.REACT_APP_WORLD);
       if (compare) {
         try {
