@@ -94,7 +94,7 @@ const Locked = () => {
         <div className={styles.globalPassContent}>
           <form onSubmit={handleSubmit}>
             <div className={styles.passContent}>
-              <label htmlFor='pass'>password {process.env.REACT_APP_WORLD_HASH}</label>
+              <label htmlFor='pass'>password {process.env.REACT_APP_WORD_HASH}</label>
               <input
                 id='pass'
                 type='password'
