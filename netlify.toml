@@ -1,10 +1,36 @@
-[build]
-  publish = "build"
-  command = "npm run build"
-
 # The following redirect is intended for use with most SPAs that handle routing internally.
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
   force = true
+
+  [[redirects]]
+  from = "/pleinAir"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/illustration"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/login"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/locked"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/portfolio"
+  to = "/index.html"
+  status = 200

@@ -1,6 +1,7 @@
 {
   "name": "website",
   "version": "2.1.2",
+  "homepage": "./portfolio",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
