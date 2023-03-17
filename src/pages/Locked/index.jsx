@@ -37,8 +37,8 @@ const Locked = () => {
       // let hashedPassword = CryptoJS.SHA256(password).toString();
       //       let compare = hashedPassword === process.env.REACT_APP_WORLD_HASH;
       // console.log('hashedPassword : ', hashedPassword);
-      let compare = password === process.env.REACT_APP_WORLD_HASH;
-      console.log('process.env.REACT_APP_WORLD_HASH : ', process.env.REACT_APP_WORLD_HASH);
+      let compare = password === process.env.REACT_APP_WORLD;
+      console.log('process.env.REACT_APP_WORLD_HASH : ', process.env.REACT_APP_WORLD);
       console.log('password : ', password);
       // let compare = await bcrypt.compare(password, process.env.REACT_APP_WORLD);
       if (compare) {
@@ -94,7 +94,7 @@ const Locked = () => {
         <div className={styles.globalPassContent}>
           <form onSubmit={handleSubmit}>
             <div className={styles.passContent}>
-              <label htmlFor='pass'>password {process.env.REACT_APP_WORD_HASH}</label>
+              <label htmlFor='pass'>password {process.env.REACT_APP_WORD}</label>
               <input
                 id='pass'
                 type='password'
