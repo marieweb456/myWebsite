@@ -5,11 +5,11 @@ import { useContext, useEffect, useState } from 'react';
 // import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { signInWithPopup } from 'firebase/auth';
 // import { auth } from '../../firebase';
-import { auth, providerGoogle } from '../../firebase';
+import { auth, providerGoogle } from '../../firebase.js';
 // import { firebase } from '../../firebase';
 import { useNavigate } from 'react-router-dom';
 // import { useNavigate, useLocation } from 'react-router-dom';
-import { AuthContext } from '../../store/auth/AuthContext';
+import { AuthContext } from '../../store/auth/AuthContext.js';
 
 const Login = () => {
   const [error, setError] = useState(false);

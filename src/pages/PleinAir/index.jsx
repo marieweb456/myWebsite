@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import styles from './index.module.css';
-import { AuthContext } from '../../store/auth/AuthContext';
-import UpFile from '../../components/UpFile';
-import GalleryPleinAir from '../../components/GalleryPleinAir';
+import { AuthContext } from '../../store/auth/AuthContext.js';
+import UpFile from '../../components/UpFile/index.jsx';
+import GalleryPleinAir from '../../components/GalleryPleinAir/index.jsx';
 
 const PleinAir = () => {
   const { currentAdmin } = useContext(AuthContext);

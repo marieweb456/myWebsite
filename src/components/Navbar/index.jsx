@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../../store/auth/AuthContext';
+import { AuthContext } from '../../store/auth/AuthContext.js';
 import { useContext } from 'react';
 import styles from './index.module.css';
 import { useState, useEffect } from 'react';

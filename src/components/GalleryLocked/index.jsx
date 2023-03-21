@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from 'react';
-import { storage } from '../../firebase';
+import { storage } from '../../firebase.js';
 import {
   ref,
   getDownloadURL,
@@ -9,12 +9,12 @@ import {
   getStorage,
 } from 'firebase/storage';
 import styles from './index.module.css';
-import ModalImg from '../ModalImg';
+import ModalImg from '../ModalImg/index.jsx';
 import { FiTrash2 } from 'react-icons/fi';
-import { AuthContext } from '../../store/auth/AuthContext';
+import { AuthContext } from '../../store/auth/AuthContext.js';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import LoadingSpinner from '..//LoadingSpinner';
+import LoadingSpinner from '../LoadingSpinner/index.jsx';
 
 const GalleryPleinAir = () => {
   const [imagesLocked, setImagesLocked] = useState([]);

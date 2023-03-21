@@ -2,7 +2,7 @@ import { ref, uploadBytes } from 'firebase/storage';
 import { useState } from 'react';
 import { v4 } from 'uuid';
 import styles from './index.module.css';
-import { storage } from '../../firebase';
+import { storage } from '../../firebase.js';
 import { FaAngellist, FaExclamationCircle } from 'react-icons/fa';
 
 const UpFile = ({ props }) => {

@@ -1,10 +1,10 @@
 import { useState, useEffect, useContext } from 'react';
-// import bcrypt from 'bcryptjs';
+import bcrypt from 'bcryptjs';
 // import CryptoJS from 'crypto-js';
 import styles from './index.module.css';
-import { AuthContext } from '../../store/auth/AuthContext';
-import Upfile from '../../components/UpFile';
-import GalleryLocked from '../../components/GalleryLocked';
+import { AuthContext } from '../../store/auth/AuthContext.js';
+import Upfile from '../../components/UpFile/index.jsx';
+import GalleryLocked from '../../components/GalleryLocked/index.jsx';
 
 const Locked = () => {
   const [password, setPassword] = useState('');
@@ -33,14 +33,17 @@ const Locked = () => {
       // let text = 'goodvibes';
       // let hash = await bcrypt.hash(text);
       // console.log('hash : ', hash);
+      // alert('hash : ', hash);
 
       // let hashedPassword = CryptoJS.SHA256(password).toString();
-      //       let compare = hashedPassword === process.env.REACT_APP_WORLD_HASH;
+      // let compare = hashedPassword === process.env.REACT_APP_WORLD_HASH;
       // console.log('hashedPassword : ', hashedPassword);
-      let compare = password === process.env.REACT_APP_WORLD;
-      console.log('process.env.REACT_APP_WORLD_HASH : ', process.env.REACT_APP_WORLD);
-      console.log('password : ', password);
-      // let compare = await bcrypt.compare(password, process.env.REACT_APP_WORLD);
+
+      // let compare = password === process.env.REACT_APP_WORLD;
+      // console.log('process.env.REACT_APP_WORD : ', process.env.REACT_APP_WORD);
+      // console.log('password : ', password);
+
+      let compare = await bcrypt.compare(password, process.env.REACT_APP_WORD);
       if (compare) {
         try {
           setLoggedIn(true);
@@ -104,7 +107,7 @@ const Locked = () => {
                 maxLength='15'
                 pattern='[0-9a-zA-Z]{8,15}'
                 required
-                autoFocus
+                // autoFocus
               />
               {/* <button type='submit'>Submit</button> */}
               {error && <p>{error}</p>}

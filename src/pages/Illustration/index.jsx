@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import styles from './index.module.css';
-import { AuthContext } from '../../store/auth/AuthContext';
-import UpFile from '../../components/UpFile';
-import GalleryIllustration from '../../components/GalleryIllustration';
+import { AuthContext } from '../../store/auth/AuthContext.js';
+import UpFile from '../../components/UpFile/index.jsx';
+import GalleryIllustration from '../../components/GalleryIllustration/index.jsx';
 
 const Illustration = () => {
   const { currentAdmin } = useContext(AuthContext);

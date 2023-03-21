@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import styles from './index.module.css';
-import { AuthContext } from '../../store/auth/AuthContext';
-import UpFile from '../../components/UpFile';
-import GalleryPortfolio from '../../components/GalleryPortfolio';
+import { AuthContext } from '../../store/auth/AuthContext.js';
+import UpFile from '../../components/UpFile/index.jsx';
+import GalleryPortfolio from '../../components/GalleryPortfolio/index.jsx';
 
 const Home = () => {
   const { currentAdmin } = useContext(AuthContext);
