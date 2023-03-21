@@ -10,7 +10,6 @@
     "bcryptjs": "^2.4.3",
     "crypto-browserify": "^3.12.0",
     "crypto-js": "^4.1.1",
-    "dotenv": "^16.0.3",
     "eslint-config-react-app": "^7.0.1",
     "firebase": "^9.15.0",
     "html-webpack-plugin": "^5.5.0",

@@ -5,7 +5,6 @@ import styles from './index.module.css';
 import { AuthContext } from '../../store/auth/AuthContext.js';
 import Upfile from '../../components/UpFile/index.jsx';
 import GalleryLocked from '../../components/GalleryLocked/index.jsx';
-require('dotenv').config();
 
 const Locked = () => {
   const [password, setPassword] = useState('');
