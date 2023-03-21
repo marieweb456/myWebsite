@@ -16,7 +16,7 @@ function App() {
       <div className='contentBodyGlobal'>
         <Routes>
           {/* Rediriger vers Home si le chemin n'est pas reconnu */}
-          <Route path='/*' element={<Navigate to='/' />} />
+          {/* <Route path='/*' element={<Navigate to='/' />} /> */}
           <Route exact path='/' element={<Navigate to='/portfolio' />} />
           <Route exact path='/portfolio' element={<Home />} />
           <Route path='/pleinAir' element={<PleinAir />} />
