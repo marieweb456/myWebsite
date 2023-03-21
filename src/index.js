@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import { HashRouter, Routes, Route } from 'react-router-dom';
 import { store } from './store/store.js';
 import { Provider } from 'react-redux';
+require('dotenv').config();
 
 // version react 17
 ReactDOM.render(
