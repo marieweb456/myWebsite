@@ -36,15 +36,16 @@ const Locked = () => {
       // alert('hash : ', hash);
 
       let hashedPassword = CryptoJS.SHA256(password).toString();
-      let compare = hashedPassword === process.env.REACT_APP_WORD;
-      console.log('hashedPassword : ', hashedPassword);
+      // let compare = hashedPassword === process.env.REACT_APP_WORD;
+      alert('hashedPassword : ', hashedPassword);
 
       // let compare = password === process.env.REACT_APP_WORLD;
       // console.log('process.env.REACT_APP_WORD : ', process.env.REACT_APP_WORD);
       // console.log('password : ', password);
 
       // let compare = await bcrypt.compare(password, process.env.REACT_APP_WORD);
-      if (compare) {
+      if (hashedPassword === process.env.REACT_APP_WORD) {
+        // if (compare) {
         try {
           setLoggedIn(true);
           dispatch({ type: 'CONNECTED_ON', payload: 'connected' });
