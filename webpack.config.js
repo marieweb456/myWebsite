@@ -15,7 +15,7 @@ const config = {
   plugins: [
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      template: './index.html',
       filename: 'index.html',
     }),
   ],
@@ -40,7 +40,7 @@ const config = {
       fs: false,
       path: require.resolve('path-browserify'),
       os: require.resolve('os-browserify/browser'),
-      crypto: require.resolve('crypto-browserify'),
+      //   crypto: require.resolve('crypto-browserify'),
     },
   },
 };
