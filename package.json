@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "2.1.2",
-  "homepage": "./portfolio",
+  "homepage": "https://marie-ponceau.netlify.app/portfolio",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
