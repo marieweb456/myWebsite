@@ -173,7 +173,7 @@
 
 @media only screen and (max-width: 1140px) and (min-width: 700px) {
   .sectionGallery {
-    margin-top: 20em;
+    margin-top: 15em;
   }
 
   .barRight {
@@ -184,7 +184,10 @@
     height: 23%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 699px) {
+  .sectionGallery {
+    margin-top: 8em;
+  }
   .galleryContent {
     width: 100%;
   }

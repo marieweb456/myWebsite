@@ -200,6 +200,11 @@
     height: 23%;
   }
 }
+@media screen and (max-width: 699px) {
+  .sectionGallery {
+    margin-top: 8em;
+  }
+}
 
 @media screen and (max-width: 873px) {
   .galleryContent {
