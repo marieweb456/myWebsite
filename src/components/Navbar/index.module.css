@@ -139,10 +139,16 @@ li,
     right: 0;
     z-index: 99;
     background-color: white;
-    padding: 8px 24px;
+    padding: 4px 18px;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     display: flex;
     justify-content: space-between;
+    height: 45px;
+  }
+  
+
+  .logo {
+    width: 90px;
   }
 
   .mobNavSize {

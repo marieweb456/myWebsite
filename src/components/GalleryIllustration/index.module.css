@@ -169,9 +169,6 @@
 }
 
 @media only screen and (max-width: 1140px) and (min-width: 700px) {
-  .sectionGallery {
-    margin-top: 20em;
-  }
 
   .barRight {
     position: fixed;
