@@ -3,7 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #fff;
-    color: #fff;
+    color: #333;
   }
   @media (prefers-color-scheme: dark) {
     body {
