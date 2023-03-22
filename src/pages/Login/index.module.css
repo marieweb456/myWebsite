@@ -100,3 +100,20 @@
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   }
 }
+@media only screen and (max-width: 872px) {
+.paragLogin {
+  font-size: 1.5em;
+  color: #978d91;
+  font-weight: 400;
+}
+.buttonConnect {
+  padding: 10px 10px;
+  font-size: 1.1em;
+}
+
+.btnGoogle {
+  font-size: 1.3em;
+  margin: 5px 0;
+  padding: 10px 10px;
+}
+}

@@ -1,5 +1,4 @@
 import { useState, useEffect, useContext } from 'react';
-// import bcrypt from 'bcryptjs';
 import CryptoJS from 'crypto-js';
 import styles from './index.module.css';
 import { AuthContext } from '../../store/auth/AuthContext.js';
@@ -14,38 +13,14 @@ const Locked = () => {
   const { currentUser } = useContext(AuthContext);
   const { dispatch } = useContext(AuthContext);
 
-  // let hashedPassword = CryptoJS.SHA256('goodvibes').toString();
-
-  // console.log('hashedPassword : ', hashedPassword);
-
-  // const handleTest = async (e) => {
-  //   let text = 'goodvibes';
-  //   let hash = await bcrypt.hash(text);
-  //   console.log('hash : ', hash);
-  // };
-  // handleTest();
-
   // formulaire
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      // let text = 'goodvibes';
-      // let hash = await bcrypt.hash(text);
-      // console.log('hash : ', hash);
-      // alert('hash : ', hash);
-
       let hashedPassword = CryptoJS.SHA256(password).toString();
-      // let compare = hashedPassword === process.env.REACT_APP_WORD;
-      // alert('hashedPassword : ', hashedPassword);
 
-      // let compare = password === process.env.REACT_APP_WORLD;
-      // console.log('process.env.REACT_APP_WORD : ', process.env.REACT_APP_WORD);
-      // console.log('password : ', password);
-
-      // let compare = await bcrypt.compare(password, process.env.REACT_APP_WORD);
       if (hashedPassword === process.env.REACT_APP_MY_WORD) {
-        // if (compare) {
         try {
           setLoggedIn(true);
           dispatch({ type: 'CONNECTED_ON', payload: 'connected' });
