@@ -26,15 +26,6 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/locked' element={<Locked />} />
           <Route path='/about' element={<About />} />
-
-          {/* <Route
-          path='dashboard'
-          element={
-            <RequireAuth>
-              <Dashboard />
-            </RequireAuth>
-          }
-        /> */}
         </Routes>
       </div>
     </AuthContextProvider>
