@@ -131,6 +131,14 @@ li,
 
 /* --------- navbar format mobile --------- */
 
+@media screen and (min-width: 900px) and (max-width: 1059px) {
+  .menu {
+    height: 100vh;
+    /* padding-top: 3rem; */
+  }
+
+}
+
 @media screen and (max-width: 1059px) {
   nav {
     position: fixed;
@@ -143,7 +151,6 @@ li,
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     display: flex;
     justify-content: space-between;
-    height: 45px;
   }
   
 
@@ -218,7 +225,7 @@ li,
     top: 0;
     right: 0;
     width: 100%;
-    padding-top: 4rem;
+    padding-top: 3rem;
     background-color: white;
     transition: 0.3s;
     opacity: 0;
@@ -260,3 +267,22 @@ li,
     filter: brightness(130%);
   }
 }
+/* @media screen and (min-width: 900px) {
+  .menu {
+    display: flex !important;
+    flex-direction: row !important;
+    position: static !important;
+    width: auto !important;
+    padding-top: 0 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .menu li {
+    margin: 0 10px !important;
+  }
+
+} */
+
