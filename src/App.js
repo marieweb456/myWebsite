@@ -5,7 +5,8 @@ import Illustration from './pages/Illustration/index.jsx';
 import Login from './pages/Login/index.jsx';
 import About from './pages/About/index.jsx';
 import Locked from './pages/Locked/index.jsx';
-import { Routes, Route, Navigate } from 'react-router-dom';
+// import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { AuthContextProvider } from './store/auth/AuthContext.js';
 import Navbar from './components/Navbar/index.jsx';
 
