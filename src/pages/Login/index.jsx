@@ -79,7 +79,8 @@ const Login = () => {
   };
 
   useEffect(() => {
-    if (loggedIn && isMounted) navigate('/portfolio');
+    if (loggedIn && isMounted) navigate('/');
+    // if (loggedIn && isMounted) navigate('/portfolio');
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loggedIn, isMounted]);
 

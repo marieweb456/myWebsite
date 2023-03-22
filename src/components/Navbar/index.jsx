@@ -54,9 +54,9 @@ const Navbar = () => {
       case '/':
         setActiveLink('portfolio');
         break;
-      case '/portfolio':
-        setActiveLink('portfolio');
-        break;
+      // case '/portfolio':
+      //   setActiveLink('portfolio');
+      //   break;
       case '/pleinAir':
         setActiveLink('pleinAir');
         break;
@@ -83,7 +83,7 @@ const Navbar = () => {
       {width >= 1060 && (
         <nav className={`${styles.mainNav} ${navbarSize ? `${styles.mainNavSize}` : ''}`}>
           <ul>
-            <li>
+            {/* <li>
               <Link
                 className={styles.mainNavLogo}
                 onClick={() => handleClick('portfolio')}
@@ -91,12 +91,28 @@ const Navbar = () => {
               >
                 <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
               </Link>
+            </li> */}
+            <li>
+              <Link className={styles.mainNavLogo} onClick={() => handleClick('portfolio')} to='/'>
+                <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
+              </Link>
             </li>
             <div className={styles.mainNavRight}>
-              <li>
+              {/* <li>
                 <Link to='/'></Link>
-              </li>
+              </li> */}
               <li>
+                <Link
+                  className={styles.mainNavItem}
+                  onClick={() => handleClick('portfolio')}
+                  to='/'
+                >
+                  <h2 className={`${activeLink === 'portfolio' ? `${styles.active}` : ''}`}>
+                    PORTFOLIO
+                  </h2>
+                </Link>
+              </li>
+              {/* <li>
                 <Link
                   className={styles.mainNavItem}
                   onClick={() => handleClick('portfolio')}
@@ -106,7 +122,7 @@ const Navbar = () => {
                     PORTFOLIO
                   </h2>
                 </Link>
-              </li>
+              </li> */}
 
               <li>
                 <Link
@@ -189,16 +205,23 @@ const Navbar = () => {
           <div className={styles.container}>
             <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
             <ul className={`${styles.menu} ${isActive ? styles.isOpen : ''}`}>
-              <li>
+              {/* <li>
                 <Link to='/'></Link>
-              </li>
+              </li> */}
               <li>
-                <Link onClick={() => handleClick('portfolio')} to='/portfolio'>
+                <Link onClick={() => handleClick('portfolio')} to='/'>
                   <h2 className={`${activeLink === 'portfolio' ? `${styles.active}` : ''}`}>
                     PORTFOLIO
                   </h2>
                 </Link>
               </li>
+              {/* <li>
+                <Link onClick={() => handleClick('portfolio')} to='/portfolio'>
+                  <h2 className={`${activeLink === 'portfolio' ? `${styles.active}` : ''}`}>
+                    PORTFOLIO
+                  </h2>
+                </Link>
+              </li> */}
               <li>
                 <Link onClick={() => handleClick('pleinAir')} to='/pleinAir'>
                   <h2 className={`${activeLink === 'pleinAir' ? `${styles.active}` : ''}`}>
