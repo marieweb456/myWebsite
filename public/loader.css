@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #fff;
+      color: #333; /* Couleur de texte appropriée pour le mode sombre */
+    }
+  }
+  
+  * {
+    font-family: 'Noto Sans', sans-serif, 'Roboto';
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .contentBodyGlobal {
+    width: 100%;
+  }
+  
+  progress {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    color: white;
+    animation: progress-animation 2s linear infinite;
+  }
+  
+  @keyframes progress-animation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
