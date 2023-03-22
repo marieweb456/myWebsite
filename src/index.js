@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // import { HashRouter, Routes, Route } from 'react-router-dom';
 import { store } from './store/store.js';
 import { Provider } from 'react-redux';
@@ -28,7 +29,7 @@ ReactDOM.render(
         <AuthContextProvider>
           <Navbar />
           <div className='contentBodyGlobal'>
-            <Routes>
+            <Switch>
               {/* Rediriger vers Home si le chemin n'est pas reconnu */}
               {/* <Route path='/*' element={<Navigate to='/' />} /> */}
               {/* <Route path='/' element={<Navigate to='/portfolio' />} /> */}
@@ -39,7 +40,7 @@ ReactDOM.render(
               <Route path='/login' element={<Login />} />
               <Route path='/locked' element={<Locked />} />
               <Route path='/about' element={<About />} />
-            </Routes>
+            </Switch>
           </div>
         </AuthContextProvider>
       </BrowserRouter>
