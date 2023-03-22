@@ -10,7 +10,7 @@ const Navbar = () => {
   const { currentAdmin } = useContext(AuthContext);
 
   // gestion de l'effet "activeLink"
-  const [activeLink, setActiveLink] = useState('/portfolio');
+  const [activeLink, setActiveLink] = useState('/');
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = (link) => {
@@ -51,6 +51,9 @@ const Navbar = () => {
     const currentPath = window.location.pathname;
     // console.log('currentPath : ', currentPath);
     switch (currentPath) {
+      case '/':
+        setActiveLink('portfolio');
+        break;
       case '/portfolio':
         setActiveLink('portfolio');
         break;
@@ -91,6 +94,9 @@ const Navbar = () => {
             </li>
             <div className={styles.mainNavRight}>
               <li>
+                <Link to='/'></Link>
+              </li>
+              <li>
                 <Link
                   className={styles.mainNavItem}
                   onClick={() => handleClick('portfolio')}
@@ -101,6 +107,7 @@ const Navbar = () => {
                   </h2>
                 </Link>
               </li>
+
               <li>
                 <Link
                   className={styles.mainNavItem}
@@ -182,6 +189,9 @@ const Navbar = () => {
           <div className={styles.container}>
             <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
             <ul className={`${styles.menu} ${isActive ? styles.isOpen : ''}`}>
+              <li>
+                <Link to='/'></Link>
+              </li>
               <li>
                 <Link onClick={() => handleClick('portfolio')} to='/portfolio'>
                   <h2 className={`${activeLink === 'portfolio' ? `${styles.active}` : ''}`}>

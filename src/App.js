@@ -17,8 +17,9 @@ function App() {
         <Routes>
           {/* Rediriger vers Home si le chemin n'est pas reconnu */}
           {/* <Route path='/*' element={<Navigate to='/' />} /> */}
-          <Route exact path='/' element={<Navigate to='/portfolio' />} />
-          <Route exact path='/portfolio' element={<Home />} />
+          {/* <Route path='/' element={<Navigate to='/portfolio' />} /> */}
+          <Route path='/' element={<Home />} />
+          <Route path='/portfolio' element={<Home />} />
           <Route path='/pleinAir' element={<PleinAir />} />
           <Route path='/illustration' element={<Illustration />} />
           <Route path='/login' element={<Login />} />
