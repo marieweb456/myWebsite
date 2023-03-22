@@ -131,13 +131,11 @@ li,
 
 /* --------- navbar format mobile --------- */
 
-@media screen and (min-width: 800px) and (max-width: 1059px) {
+/* @media screen and (min-width: 800px) and (max-width: 1059px) {
   .menu {
     height: 100vh;
-    /* padding-top: 3rem; */
   }
-
-}
+} */
 
 @media screen and (max-width: 1059px) {
   nav {
@@ -152,7 +150,6 @@ li,
     display: flex;
     justify-content: space-between;
   }
-  
 
   .logo {
     width: 90px;
