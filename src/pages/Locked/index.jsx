@@ -68,7 +68,7 @@ const Locked = () => {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [loggedIn]);
+  }, [loggedIn, window.onload, window.onbeforeunload]);
 
   const [showPassword, setShowPassword] = useState(false);
 
