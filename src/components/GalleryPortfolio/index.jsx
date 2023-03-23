@@ -328,9 +328,7 @@ const GalleryPortfolio = () => {
             )}
             {sortedImagesPortfolio ? (
               <div
-                className={`${styles.galleryContent} ${
-                  currentAdmin ? styles.addMargiTopAdmin : ''
-                }`}
+                className={`${styles.galleryContent} ${currentAdmin ? styles.galleryContent2 : ''}`}
                 id='image-gallery'
               >
                 {sortedImagesPortfolio.map((media) => (
