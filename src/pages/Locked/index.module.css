@@ -38,3 +38,14 @@
 .buttonSendImg {
   background-color: greenyellow;
 }
+.contentPasswordAndShowBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.passContent button {
+  border-radius: 0 5px 5px 0;
+  height: 1.3em;
+  color: white;
+  background-image: linear-gradient(315deg, #ffffff 0%, #274060 74%);
+}
