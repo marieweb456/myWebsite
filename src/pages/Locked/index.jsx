@@ -44,7 +44,7 @@ const Locked = () => {
   useEffect(() => {
     if (loggedIn) {
       const disconnectTime = JSON.parse(localStorage.getItem('disconnectTime'));
-      if (disconnectTime !== null) {
+      if (disconnectTime && disconnectTime !== null) {
         const remainingTime = 1000 * 60 * 60 * 2 - (Date.now() - disconnectTime);
         if (remainingTime > 0) {
           setTimeout(() => {
