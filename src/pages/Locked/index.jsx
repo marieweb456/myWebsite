@@ -44,8 +44,9 @@ const Locked = () => {
   useEffect(() => {
     if (loggedIn) {
       const disconnectTime = JSON.parse(localStorage.getItem('disconnectTime'));
+      console.log('disconnectTime type : ', typeof disconnectTime);
       if (disconnectTime && disconnectTime !== null) {
-        const remainingTime = 1000 * 60 * 60 * 2 - (Date.now() - disconnectTime);
+        const remainingTime = 1000 * 60 * 60 * 2 - (Date.now() - disconnectTime.time);
         if (remainingTime > 0) {
           setTimeout(() => {
             dispatch({ type: 'CONNECTED_OFF' });
