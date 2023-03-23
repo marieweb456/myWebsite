@@ -209,7 +209,9 @@ const GalleryPleinAir = () => {
               </div>
             )}
             {imagesLocked ? (
-              <div className={styles.galleryContent}>
+              <div
+                className={`${styles.galleryContent} ${currentAdmin ? styles.galleryContent2 : ''}`}
+              >
                 {imagesLocked.map((media) => (
                   <div key={media.id}>
                     <LazyLoadImage
