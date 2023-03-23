@@ -70,6 +70,7 @@ const Locked = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loggedIn, window.onload, window.onbeforeunload]);
 
+  // gestion de l'état du bouon pour voir PW
   const [showPassword, setShowPassword] = useState(false);
 
   const toggleShowPassword = () => {
