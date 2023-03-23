@@ -175,6 +175,9 @@
   .sectionGallery {
     margin-top: 15em;
   }
+  .addMargiTopAdmin {
+    margin-top: 5em;
+  }
 
   .barRight {
     position: fixed;

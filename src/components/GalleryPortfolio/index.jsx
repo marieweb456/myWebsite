@@ -327,7 +327,12 @@ const GalleryPortfolio = () => {
               </div>
             )}
             {sortedImagesPortfolio ? (
-              <div className={styles.galleryContent} id='image-gallery'>
+              <div
+                className={`${styles.galleryContent} ${
+                  currentAdmin ? styles.addMargiTopAdmin : ''
+                }`}
+                id='image-gallery'
+              >
                 {sortedImagesPortfolio.map((media) => (
                   <div key={media.id}>
                     <LazyLoadImage
