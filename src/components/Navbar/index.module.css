@@ -272,6 +272,8 @@ li,
 
 .menu li h2 {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .separator {
   font-size: 0;
