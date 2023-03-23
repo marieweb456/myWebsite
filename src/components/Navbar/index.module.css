@@ -262,13 +262,13 @@ li,
 @media only screen and (max-width: 1059px) and (orientation: landscape) {
   .menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row !important;
     justify-content: space-between;
     align-items: center;
     margin-top: 0;
     width: 100%;
   }
-  .menu li {
+  .menu li, .menu h2{
     display: inline-block;
     margin: 0;
     padding: 0;
