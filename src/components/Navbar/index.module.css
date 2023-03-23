@@ -264,22 +264,23 @@ li,
     filter: brightness(130%);
   }
 }
-/* @media screen and (min-width: 900px) {
+
+/* styles pour mobile en mode paysage */
+@media only screen and (max-width: 1059px) and (orientation: landscape) {
   .menu {
-    display: flex !important;
-    flex-direction: row !important;
-    position: static !important;
-    width: auto !important;
-    padding-top: 0 !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    opacity: 1 !important;
-    transform: none !important;
+    display: none;
+    flex-direction: row;
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 3rem;
+    background-color: white;
+    transition: 0.3s;
+    opacity: 0;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    margin: 0; */
   }
+}
 
-  .menu li {
-    margin: 0 10px !important;
-  }
-
-} */
 
