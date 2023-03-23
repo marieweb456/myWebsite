@@ -132,3 +132,8 @@
     height: 20vh;
   }
 }
+@media only screen and (max-width: 1050px) {
+  .contentSocialIcn {
+    align-items: center;
+  }
+}
