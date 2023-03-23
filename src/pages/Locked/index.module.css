@@ -46,6 +46,9 @@
 .passContent button {
   border-radius: 0 5px 5px 0;
   height: 1.3em;
-  color: white;
-  background-image: linear-gradient(315deg, #ffffff 0%, #274060 74%);
+  color: #978d91;
+  border: 1px solid;
+  filter: brightness(103%);
+  background: rgb(228,228,228);
+  background: linear-gradient(90deg, rgba(228,228,228,1) 0%, rgba(255,254,254,1) 50%, rgba(233,233,233,1) 100%, rgba(0,212,255,1) 100%);
 }
