@@ -51,6 +51,7 @@ const Locked = () => {
             dispatch({ type: 'CONNECTED_OFF' });
             localStorage.setItem('user', null);
             localStorage.setItem('disconnectTime', null);
+            setLoggedIn(false);
             window.location.reload();
           }, remainingTime);
         }
@@ -61,6 +62,7 @@ const Locked = () => {
           dispatch({ type: 'CONNECTED_OFF' });
           localStorage.setItem('user', null);
           localStorage.setItem('disconnectTime', null);
+          setLoggedIn(false);
           window.location.reload();
         }, 1000 * 60 * 60 * 2);
       }
