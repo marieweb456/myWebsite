@@ -201,7 +201,7 @@ const Navbar = () => {
       )}
 
       {width <= 1059 && (
-        <nav className={`${styles.nav} ${navbarSize ? `${styles.mobNavSize}` : ''}`}>
+        <nav className={styles.nav}>
           <div className={styles.container}>
             <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
             <ul className={`${styles.menu} ${isActive ? styles.isOpen : ''}`}>
