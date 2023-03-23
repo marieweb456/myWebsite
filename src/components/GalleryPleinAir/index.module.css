@@ -208,6 +208,9 @@
   .sectionGallery {
     margin-top: 8em;
   }
+  .galleryContent2 {
+    margin-top: 3em;
+  }
 }
 
 @media screen and (max-width: 873px) {
