@@ -259,7 +259,7 @@ li,
 }
 
 /* styles pour mobile en mode paysage */
-@media only screen and (max-width: 1059px) and (orientation: landscape) {
+@media only screen and (max-width: 1059px) and (max-height: 760px) and (orientation: landscape) {
   .menu {
     flex-direction: row;
     justify-content: center;
@@ -282,7 +282,7 @@ li,
 }
 }
 
-@media only screen and (max-width: 830px) and (orientation: landscape) {
+@media only screen and (max-width: 830px) and (max-height: 760px) and (orientation: landscape) {
   .menu li h2 {
     padding: 0.5rem;
     font-size: 0.8rem;
