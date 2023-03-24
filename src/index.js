@@ -13,6 +13,8 @@ import About from './pages/About/index.jsx';
 import Locked from './pages/Locked/index.jsx';
 import { AuthContextProvider } from './store/auth/AuthContext.js';
 import Navbar from './components/Navbar/index.jsx';
+import Footer from './components/Footer/index.jsx';
+import Error from './pages/Error404/index.jsx';
 
 // version react 17
 ReactDOM.render(
@@ -25,6 +27,7 @@ ReactDOM.render(
             <div className='contentBodyGlobal'>
               <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/*' element={<Error />} />
                 <Route path='/pleinAir' element={<PleinAir />} />
                 <Route path='/illustration' element={<Illustration />} />
                 <Route path='/login' element={<Login />} />
@@ -32,6 +35,7 @@ ReactDOM.render(
                 <Route path='/about' element={<About />} />
               </Routes>
             </div>
+            <Footer />
           </div>
         </AuthContextProvider>
       </BrowserRouter>

@@ -1,0 +1,31 @@
+.contentMessageError404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: center;
+  margin: 2em auto auto auto;
+}
+.messageError404 {
+    color: #978d91;
+  font-size: 120px;
+  margin-bottom: 0.5em;
+  margin-top: 2em;
+}
+.paragError404 {
+  margin-top: 0;
+  color: #978d91;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+    .messageError404 {
+        color: #ff0101;
+        font-size: 60px;
+        margin-top: 5em;
+      }
+      .paragError404 {
+        margin-bottom: 0.5em;
+        color: #ff0101;
+        font-size: 18px;
+      }
+}

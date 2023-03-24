@@ -23,6 +23,11 @@
   height: 30px;
   border: 1px solid black;
   border-radius: 5px 0 0 5px;
+  padding-left: 0.5em;
+}
+.passContent input:focus {
+  border: 1px solid black;
+  outline: none; /* Supprime la bordure bleue par défaut */
 }
 .passContent button {
   border-radius: 10px;
