@@ -19,13 +19,13 @@
 }
 @media screen and (max-width: 768px) {
     .messageError404 {
-        color: #ff0101;
+        color: #978d91;
         font-size: 60px;
-        margin-top: 5em;
+        margin-top: 3em;
       }
       .paragError404 {
         margin-bottom: 0.5em;
-        color: #ff0101;
+        color: #978d91;
         font-size: 18px;
       }
 }
