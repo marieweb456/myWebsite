@@ -72,7 +72,7 @@ const GalleryPleinAir = () => {
       setTimeout(() => {
         sessionStorage.clear();
         setFirstLoad(false);
-      }, 1000 * 60 * 60 * 24); // 2 heures en millisecondes // 1000 * 60 * 60 * 2
+      }, 1000 * 60 * 60 * 2); // 2 heures en millisecondes // 1000 * 60 * 60 * 2
     }
   }, [firstLoad]);
 

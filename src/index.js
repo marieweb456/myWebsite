@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { store } from './store/store.js';
 import { Provider } from 'react-redux';
 //
@@ -21,25 +19,19 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        {/* <Routes> */}
-        {/* la route spécifique sera l'ensemnle des elements dans app, donc le router  */}
-        {/* <Route path='/*' element={<App />} /> */}
-        {/* </Routes> */}
         <AuthContextProvider>
-          <Navbar />
-          <div className='contentBodyGlobal'>
-            <Routes>
-              {/* Rediriger vers Home si le chemin n'est pas reconnu */}
-              {/* <Route path='/*' element={<Navigate to='/' />} /> */}
-              {/* <Route path='/' element={<Navigate to='/portfolio' />} /> */}
-              <Route path='/' element={<Home />} />
-              {/* <Route path='/portfolio' element={<Home />} /> */}
-              <Route path='/pleinAir' element={<PleinAir />} />
-              <Route path='/illustration' element={<Illustration />} />
-              <Route path='/login' element={<Login />} />
-              <Route path='/locked' element={<Locked />} />
-              <Route path='/about' element={<About />} />
-            </Routes>
+          <div className='contentBodyTotal'>
+            <Navbar />
+            <div className='contentBodyGlobal'>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/pleinAir' element={<PleinAir />} />
+                <Route path='/illustration' element={<Illustration />} />
+                <Route path='/login' element={<Login />} />
+                <Route path='/locked' element={<Locked />} />
+                <Route path='/about' element={<About />} />
+              </Routes>
+            </div>
           </div>
         </AuthContextProvider>
       </BrowserRouter>

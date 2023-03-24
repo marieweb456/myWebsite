@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #fff;
-    color: #333; /* Couleur de texte appropriée pour le mode sombre */
+    color: #333; 
   }
 }
 
@@ -41,4 +41,4 @@ progress {
   100% {
     width: 100%;
   }
-}
+} */

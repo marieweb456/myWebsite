@@ -4,11 +4,18 @@ body {
     box-sizing: border-box;
     background-color: #fff;
     color: #333;
+    min-width: 260px;
   }
+
+  .contentBodyTotal {
+    max-width: 100%;
+  }
+
+  /* Couleur de texte appropriée pour le mode sombre */
   @media (prefers-color-scheme: dark) {
     body {
       background-color: #fff;
-      color: #333; /* Couleur de texte appropriée pour le mode sombre */
+      color: #333; 
     }
   }
   

@@ -49,14 +49,10 @@ const Navbar = () => {
   // détecter url et attribuer l'effet "activeLink" en fonction
   useEffect(() => {
     const currentPath = window.location.pathname;
-    // console.log('currentPath : ', currentPath);
     switch (currentPath) {
       case '/':
         setActiveLink('portfolio');
         break;
-      // case '/portfolio':
-      //   setActiveLink('portfolio');
-      //   break;
       case '/pleinAir':
         setActiveLink('pleinAir');
         break;
@@ -83,24 +79,12 @@ const Navbar = () => {
       {width >= 1060 && (
         <nav className={`${styles.mainNav} ${navbarSize ? `${styles.mainNavSize}` : ''}`}>
           <ul>
-            {/* <li>
-              <Link
-                className={styles.mainNavLogo}
-                onClick={() => handleClick('portfolio')}
-                to='/portfolio'
-              >
-                <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
-              </Link>
-            </li> */}
             <li>
               <Link className={styles.mainNavLogo} onClick={() => handleClick('portfolio')} to='/'>
                 <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
               </Link>
             </li>
             <div className={styles.mainNavRight}>
-              {/* <li>
-                <Link to='/'></Link>
-              </li> */}
               <li>
                 <Link
                   className={styles.mainNavItem}
@@ -112,17 +96,6 @@ const Navbar = () => {
                   </h2>
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  className={styles.mainNavItem}
-                  onClick={() => handleClick('portfolio')}
-                  to='/portfolio'
-                >
-                  <h2 className={`${activeLink === 'portfolio' ? `${styles.active}` : ''}`}>
-                    PORTFOLIO
-                  </h2>
-                </Link>
-              </li> */}
 
               <li>
                 <Link
@@ -205,9 +178,6 @@ const Navbar = () => {
           <div className={styles.container}>
             <img src={Logo} className={styles.logo} alt='Marie Ponceau' />
             <ul className={`${styles.menu} ${isActive ? styles.isOpen : ''}`}>
-              {/* <li>
-                <Link to='/'></Link>
-              </li> */}
               <li>
                 <Link onClick={() => handleClick('portfolio')} to='/'>
                   <h2 className={`${activeLink === 'portfolio' ? `${styles.active}` : ''}`}>
@@ -215,13 +185,6 @@ const Navbar = () => {
                   </h2>
                 </Link>
               </li>
-              {/* <li>
-                <Link onClick={() => handleClick('portfolio')} to='/portfolio'>
-                  <h2 className={`${activeLink === 'portfolio' ? `${styles.active}` : ''}`}>
-                    PORTFOLIO
-                  </h2>
-                </Link>
-              </li> */}
               <li>
                 <Link onClick={() => handleClick('pleinAir')} to='/pleinAir'>
                   <h2 className={`${activeLink === 'pleinAir' ? `${styles.active}` : ''}`}>

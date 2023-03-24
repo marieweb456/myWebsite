@@ -40,15 +40,25 @@ const Locked = () => {
     }
   };
 
-  // // déconnexion de l'utilisateur lambda du password
+  // -----------
+
+  // déconnexion de l'utilisateur lambda du password
+  const [refresh, setRefresh] = useState(JSON.parse(localStorage.getItem('refresh') || false));
+
   useEffect(() => {
-    if (loggedIn) {
+    // Récupérer la valeur de refresh à partir du stockage local
+    let localRefresh = JSON.parse(localStorage.getItem('refresh'));
+    console.log('useEffect in');
+    console.log('currentUser : ', currentUser);
+    if (currentUser) {
+      console.log('in loggedIn');
       const disconnectTime = JSON.parse(localStorage.getItem('disconnectTime'));
-      console.log('disconnectTime type : ', typeof disconnectTime);
-      if (disconnectTime && disconnectTime !== null) {
-        const remainingTime = 1000 * 60 * 60 * 2 - (Date.now() - disconnectTime.time);
+      if (disconnectTime) {
+        console.log('in disconnectTime');
+        const remainingTime = 1000 * 60 * 60 * 2 - (Date.now() - JSON.parse(disconnectTime));
         if (remainingTime > 0) {
           setTimeout(() => {
+            console.log('');
             dispatch({ type: 'CONNECTED_OFF' });
             localStorage.setItem('user', null);
             localStorage.setItem('disconnectTime', null);
@@ -57,6 +67,7 @@ const Locked = () => {
           }, remainingTime);
         }
       } else {
+        console.log('in else disconnectTime');
         const currentTime = Date.now();
         localStorage.setItem('disconnectTime', JSON.stringify(currentTime));
         setTimeout(() => {
@@ -68,8 +79,22 @@ const Locked = () => {
         }, 1000 * 60 * 60 * 2);
       }
     }
+
+    // Récupérer la valeur de refresh à partir du stockage local ou utiliser la valeur par défaut
+    // toutes les 5 minutes l'entièreté de ce useEffect sera répété, pour contrôler l'accès user
+    const interval = setInterval(() => {
+      setRefresh((prevRefresh) => !prevRefresh);
+    }, (localRefresh || 5) * 60 * 1000);
+
+    // Enregistrer la valeur de refresh dans le stockage local à chaque mise à jour
+    localStorage.setItem('refresh', JSON.stringify(refresh));
+
+    return () => clearInterval(interval);
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [loggedIn, window.onload, window.onbeforeunload]);
+  }, [loggedIn, refresh, currentUser]);
+
+  // -----------
 
   // gestion de l'état du bouon pour voir PW
   const [showPassword, setShowPassword] = useState(false);
@@ -96,13 +121,11 @@ const Locked = () => {
                   maxLength='15'
                   pattern='[0-9a-zA-Z]{8,15}'
                   required
-                  // autoFocus
                 />
                 <button className={styles.showBtn} type='button' onClick={toggleShowPassword}>
                   {showPassword ? <ImEyeBlocked /> : <ImEye />}
                 </button>
               </div>
-              {/* <button type='submit'>Submit</button> */}
               {error && <p>{error}</p>}
             </div>
           </form>
