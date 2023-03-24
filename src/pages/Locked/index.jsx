@@ -51,7 +51,7 @@ const Locked = () => {
       const disconnectTime = JSON.parse(localStorage.getItem('disconnectTime'));
       if (disconnectTime) {
         const remainingTime = 1000 * 60 * 60 * 2 - (Date.now() - JSON.parse(disconnectTime));
-        if (remainingTime > 0) {
+        if (remainingTime <= 0) {
           setTimeout(() => {
             dispatch({ type: 'CONNECTED_OFF' });
             localStorage.setItem('user', null);
