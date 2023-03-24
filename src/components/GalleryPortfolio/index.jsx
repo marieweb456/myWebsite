@@ -37,9 +37,7 @@ const GalleryPortfolio = () => {
     if (storedImages) {
       setSortedImagesPortfolio(storedImages);
       setFirstLoad(false);
-      console.log('images from session storage');
     } else {
-      console.log('images from bdd');
       listAll(imgListRefPortfolio).then((response) => {
         let index = 0;
         const images = response.items.map((item) => ({

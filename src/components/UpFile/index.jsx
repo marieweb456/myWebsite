@@ -67,7 +67,6 @@ const UpFile = ({ props }) => {
     if (size) metadata.customMetadata = { ...metadata.customMetadata, size };
     if (projectToUpper) {
       const project = capitalizeFirstLetter(projectToUpper);
-      console.log('projectUpper : ', project);
       metadata.customMetadata = { ...metadata.customMetadata, project };
     }
     // Ajout de la date et l'heure précises du téléchargement
@@ -82,7 +81,6 @@ const UpFile = ({ props }) => {
       setUploadSuccess(true);
       setError(null);
       resetState(); // Réinitialiser les variables d'état à null
-      console.log('uploadSuccessT : ', uploadSuccess);
     } catch (error) {
       console.error(error);
       setError(error);

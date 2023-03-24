@@ -33,9 +33,7 @@ const GalleryPleinAir = () => {
     if (storedImages) {
       setImagesIllustration(storedImages);
       setFirstLoad(false);
-      console.log('images from session storage');
     } else {
-      console.log('images from bdd');
       listAll(imgListRefIllustration).then((response) => {
         let index = 0;
         response.items.forEach((item) => {
@@ -181,7 +179,6 @@ const GalleryPleinAir = () => {
     try {
       await deleteObject(desertRef);
     } catch (error) {
-      console.log('Error deleting file from Firebase Storage:', error);
       return;
     }
 

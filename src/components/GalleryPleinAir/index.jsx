@@ -30,9 +30,7 @@ const GalleryPleinAir = () => {
     if (storedImages) {
       setImagesPleinAir(storedImages);
       setFirstLoad(false);
-      console.log('images from sessionStorage');
     } else {
-      console.log('images from bdd');
       listAll(imgListRefPleinAir).then((response) => {
         let index = 0;
         response.items.forEach((item) => {

@@ -28,7 +28,6 @@ const Locked = () => {
           dispatch({ type: 'CONNECTED_ON', payload: 'connected' });
           setError('');
         } catch (err) {
-          console.log('error in compare');
           setLoggedIn(false);
         }
       } else {
@@ -48,17 +47,12 @@ const Locked = () => {
   useEffect(() => {
     // Récupérer la valeur de refresh à partir du stockage local
     let localRefresh = JSON.parse(localStorage.getItem('refresh'));
-    console.log('useEffect in');
-    console.log('currentUser : ', currentUser);
     if (currentUser) {
-      console.log('in loggedIn');
       const disconnectTime = JSON.parse(localStorage.getItem('disconnectTime'));
       if (disconnectTime) {
-        console.log('in disconnectTime');
         const remainingTime = 1000 * 60 * 60 * 2 - (Date.now() - JSON.parse(disconnectTime));
         if (remainingTime > 0) {
           setTimeout(() => {
-            console.log('');
             dispatch({ type: 'CONNECTED_OFF' });
             localStorage.setItem('user', null);
             localStorage.setItem('disconnectTime', null);
@@ -67,7 +61,6 @@ const Locked = () => {
           }, remainingTime);
         }
       } else {
-        console.log('in else disconnectTime');
         const currentTime = Date.now();
         localStorage.setItem('disconnectTime', JSON.stringify(currentTime));
         setTimeout(() => {
