@@ -29,3 +29,8 @@
         font-size: 18px;
       }
 }
+@media only screen and (max-width: 1059px) and (orientation: landscape) {
+    .messageError404 {
+        margin-top: 0;
+      }
+}
