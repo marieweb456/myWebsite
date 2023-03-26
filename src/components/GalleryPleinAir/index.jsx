@@ -244,7 +244,7 @@ const GalleryPleinAir = () => {
               <div className={styles.leftGallery}>
                 <div className={styles.leftTextRef}>
                   {selectedImageAlt && <p>{selectedImageAlt}</p>}
-                  {!selectedImageAlt && <p>Please hover an image to discover details</p>}
+                  {/* {!selectedImageAlt && <p>Please hover an image to discover details</p>} */}
                 </div>
                 <div className={styles.barRight}></div>
               </div>
