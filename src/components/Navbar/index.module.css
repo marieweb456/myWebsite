@@ -113,12 +113,12 @@ li,
   filter: brightness(50%);
 }
 
-.mainNavRight li:last-child h2:hover,
-.mainNavRight li:last-child h2:active,
-.mainNavRight li:last-child h2:active::after,
-.mainNavRight .active {
-  color: #978d91;
-  filter: brightness(50%);
+.mainNavRight li:last-child h2:hover, 
+.mainNavRight li:last-child h2:active, 
+.mainNavRight li:last-child h2::after, 
+.mainNavRight .active { 
+  color: #978d91; 
+  filter: brightness(50%); 
 }
 
 .separator {

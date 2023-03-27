@@ -3,11 +3,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* position: center; */
   margin: 2em auto auto auto;
 }
 .messageError404 {
-    color: #978d91;
+  color: #978d91;
   font-size: 120px;
   margin-bottom: 0.5em;
   margin-top: 2em;
