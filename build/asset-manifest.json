@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.89d3ec8f.css",
+    "main.js": "/static/js/main.0caf11e1.js",
+    "static/js/651.a12be8fd.chunk.js": "/static/js/651.a12be8fd.chunk.js",
+    "static/media/tof_about.jpg": "/static/media/tof_about.90488b0458f03601678a.jpg",
+    "static/media/logo3_marie.png": "/static/media/logo3_marie.279b52876340ce71ee19.png",
+    "index.html": "/index.html",
+    "main.89d3ec8f.css.map": "/static/css/main.89d3ec8f.css.map",
+    "main.0caf11e1.js.map": "/static/js/main.0caf11e1.js.map",
+    "651.a12be8fd.chunk.js.map": "/static/js/651.a12be8fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89d3ec8f.css",
+    "static/js/main.0caf11e1.js"
+  ]
+}
