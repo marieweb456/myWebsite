@@ -4,7 +4,7 @@ import { useContext } from "react"
 import styles from "./index.module.css"
 import { useState, useEffect } from "react"
 // import Logo from '../../assets/images/logo3_marie.png';
-import Logo from "../../assets/images/logoMarie1.png"
+import Logo from "../../assets/images/logoMarie2.png"
 
 const Navbar = () => {
   const { dispatch } = useContext(AuthContext)
