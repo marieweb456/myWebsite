@@ -61,9 +61,10 @@
 }
 
 .galleryContent img {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   width: 100%;
-}
+} 
+/* 15 / 10 ... 20 / 10 ... 20 / 15 ... 25 / 15 ... 25 / 20 */
 
 .sectionYetAvailable {
   width: 100%;
