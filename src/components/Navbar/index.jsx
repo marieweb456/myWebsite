@@ -219,7 +219,9 @@ const Navbar = () => {
       {width <= 1059 && (
         <nav className={styles.nav}>
           <div className={styles.container}>
-            <img src={Logo} className={styles.logo} alt="Marie Ponceau" />
+            <Link to="/">
+              <img src={Logo} className={styles.logo} alt="Marie Ponceau" />
+            </Link>
             <ul className={`${styles.menu} ${isActive ? styles.isOpen : ""}`}>
               <li>
                 <Link onClick={() => handleClick("portfolio")} to="/">
